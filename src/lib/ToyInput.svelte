@@ -92,14 +92,14 @@
 	}
 
 	h4 {
-		box-shadow: var(--level-2);
+		box-shadow: var(--level-2, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
 		font-family: 'MonoLisa', monospace;
 		text-transform: capitalize;
 		padding: 6px 10px;
 		cursor: pointer;
 		font-size: var(--state-tool-heading-font-size, 16px);
 		margin: 0;
-		background: var(--primary);
+		background: var(--primary, #000);
 		color: var(--white);
 
 		span {

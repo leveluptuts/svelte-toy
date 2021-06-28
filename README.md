@@ -1,8 +1,12 @@
+![construction.gif](./static/YVPE.gif)
+
 # Svelte Toy
+
+`npm install @leveluptuts/svelte-toy`
 
 ```svelte
 <script>
-	import Toy from '$lib/Toy.svelte';
+	import Toy from '@leveluptuts/svelte-toy/Toy.svelte';
 	import { writable } from 'svelte/store';
 
 	let example = writable({
