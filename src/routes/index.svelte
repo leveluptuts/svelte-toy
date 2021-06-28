@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Toy from '$lib/Toy.svelte';
+	import { writable } from 'svelte/store';
+
+	let example = writable({
+		name: 'John',
+		isActive: false
+	});
+</script>
+
+<h1>Hi, my name is {$example.name}</h1>
+
+{#if $example.isActive}
+	<p>I'm active</p>
+{/if}
+
+<Toy register={[{ example }]} />

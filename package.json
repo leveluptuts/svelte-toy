@@ -1,6 +1,9 @@
 {
 	"name": "@leveluptuts/svelte-toy",
-	"version": "0.0.1",
+	"description": "A dope toy for Svelte stores",
+	"version": "0.0.2",
+	"author": "leveluptuts",
+	"repository": "leveluptuts/svelte-toy",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
