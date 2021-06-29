@@ -27,12 +27,11 @@
 	.state-mang {
 		transition: transform 0.2s var(--ease-in-out-quint);
 		transform: translate3d(100%, 0, 0);
-
 		position: fixed;
 		top: 10%;
 		right: 0;
-		width: 300px;
-		z-index: 2001;
+		width: var(--toy-width, 300px);
+		z-index: var(--toy-z, 2001);
 
 		&.active {
 			transform: translate3d(0, 0, 0) scale(1.05);
@@ -40,12 +39,12 @@
 
 		.nub {
 			border-radius: 15px 0 0 15px;
-			box-shadow: var(--level-4);
+			box-shadow: var(--level-4, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
 			position: absolute;
 			padding: 10px;
 			right: 100%;
 			top: 60px;
-			background: var(--state-tool-bg, #fff);
+			background: var(--toy-nub-bg, #fff);
 		}
 	}
 

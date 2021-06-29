@@ -97,7 +97,7 @@
 		text-transform: capitalize;
 		padding: 6px 10px;
 		cursor: pointer;
-		font-size: var(--state-tool-heading-font-size, 16px);
+		font-size: var(--toy-heading-font-size, 16px);
 		margin: 0;
 		background: var(--primary, #000);
 		color: var(--white);
