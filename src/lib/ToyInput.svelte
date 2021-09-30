@@ -20,7 +20,7 @@
 
 	function updateObject(property, value) {
 		let newData = JSON.parse(value);
-		console.log('newData', newData);
+
 		store.update((u) => {
 			let newUser = { ...u };
 			newUser[property] = newData;
