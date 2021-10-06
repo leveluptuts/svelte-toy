@@ -1,19 +1,6 @@
 {
-	"name": "@leveluptuts/svelte-toy",
-	"description": "A dope toy for Svelte stores",
-	"version": "0.0.6",
 	"author": "leveluptuts",
-	"repository": "leveluptuts/svelte-toy",
-	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"preview": "svelte-kit preview",
-		"package": "svelte-kit package",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write --plugin-search-dir=. ."
-	},
+	"description": "A dope toy for Svelte stores",
 	"devDependencies": {
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
@@ -30,5 +17,18 @@
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0"
 	},
-	"type": "module"
+	"name": "@leveluptuts/svelte-toy",
+	"repository": "@leveluptuts/svelte-toy",
+	"scripts": {
+		"build": "svelte-kit build",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "svelte-kit dev",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview"
+	},
+	"type": "module",
+	"version": "0.0.6"
 }
