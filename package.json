@@ -17,7 +17,7 @@
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0"
 	},
-	"name": "@leveluptuts/svelte-toy",
+	"name": "leveluptuts/svelte-toy",
 	"repository": "@leveluptuts/svelte-toy",
 	"scripts": {
 		"build": "svelte-kit build",
