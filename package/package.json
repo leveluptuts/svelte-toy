@@ -1,0 +1,15 @@
+{
+  "name": "@leveluptuts/svelte-toy",
+  "version": "0.0.6",
+  "description": "A dope toy for Svelte stores",
+  "author": "leveluptuts",
+  "repository": "leveluptuts/svelte-toy",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./Toy.svelte": "./Toy.svelte",
+    "./ToyInput.svelte": "./ToyInput.svelte",
+    "./index.js": "./index.js",
+    ".": "./index.js"
+  }
+}
