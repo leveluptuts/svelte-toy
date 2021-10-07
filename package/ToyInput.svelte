@@ -1,34 +1,27 @@
-<script lang="ts">
-	import { slide } from 'svelte/transition';
-	import { writable } from 'svelte/store';
-	import { onDestroy } from 'svelte';
-
-	export let store;
-	export let label;
-
-	export let isOpen;
-	let localStore = writable(null);
-	const unsub = store.subscribe((val) => ($localStore = val));
-
-	function updateStore(property, value) {
-		store.update((u) => {
-			let newUser = { ...u };
-			newUser[property] = value;
-			return newUser;
-		});
-	}
-
-	function updateObject(property, value) {
-		let newData = JSON.parse(value);
-		console.log('newData', newData);
-		store.update((u) => {
-			let newUser = { ...u };
-			newUser[property] = newData;
-			return newUser;
-		});
-	}
-
-	onDestroy(unsub);
+<script >import { slide } from 'svelte/transition';
+import { writable } from 'svelte/store';
+import { onDestroy } from 'svelte';
+export let store;
+export let label;
+export let isOpen;
+let localStore = writable(null);
+const unsub = store.subscribe((val) => ($localStore = val));
+function updateStore(property, value) {
+    store.update((u) => {
+        let newUser = { ...u };
+        newUser[property] = value;
+        return newUser;
+    });
+}
+function updateObject(property, value) {
+    let newData = JSON.parse(value);
+    store.update((u) => {
+        let newUser = { ...u };
+        newUser[property] = newData;
+        return newUser;
+    });
+}
+onDestroy(unsub);
 </script>
 
 <h4 class:isOpen on:click={() => (isOpen = !isOpen)}>
@@ -82,48 +75,43 @@
 	</div>
 {/if}
 
-<style lang="scss">
-	div {
-		margin-bottom: 5px;
-	}
+<style >div {
+  margin-bottom: 5px;
+}
 
-	.state-mang-data {
-		padding: 10px;
-	}
+.state-mang-data {
+  padding: 10px;
+}
 
-	h4 {
-		box-shadow: var(--level-2, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
-		font-family: 'MonoLisa', monospace;
-		text-transform: capitalize;
-		padding: 6px 10px;
-		cursor: pointer;
-		font-size: var(--toy-heading-font-size, 16px);
-		margin: 0;
-		background: var(--primary, #000);
-		color: var(--white);
+h4 {
+  box-shadow: var(--level-2, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
+  font-family: "MonoLisa", monospace;
+  text-transform: capitalize;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: var(--toy-heading-font-size, 16px);
+  margin: 0;
+  background: var(--primary, #000);
+  color: var(--white);
+}
+h4 span {
+  display: inline-block;
+  font-size: 10px;
+  transform: rotate(-90deg);
+  transition: 0.2s transform var(--ease-in-out-quint);
+}
+h4.isOpen span {
+  transform: rotate(0turn);
+}
 
-		span {
-			display: inline-block;
-			font-size: 10px;
-			transform: rotate(-90deg);
-			transition: 0.2s transform var(--ease-in-out-quint);
-		}
+label {
+  font-size: 10px;
+}
 
-		&.isOpen {
-			span {
-				transform: rotate(0turn);
-			}
-		}
-	}
+input {
+  font-size: 14px;
+}
 
-	label {
-		font-size: 10px;
-	}
-	input {
-		font-size: 14px;
-	}
-
-	textarea {
-		font-size: 12px;
-	}
-</style>
+textarea {
+  font-size: 12px;
+}</style>
