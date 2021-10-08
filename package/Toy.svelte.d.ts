@@ -2,7 +2,9 @@ import { SvelteComponentTyped } from "svelte";
 declare const __propDef: {
     props: {
         register: any;
+        icon?: string;
         active?: boolean;
+        theme?: string;
     };
     events: {
         [evt: string]: any;

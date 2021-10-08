@@ -1,7 +1,9 @@
-<script >import StateMangInput from './ToyInput.svelte';
-import Portal from 'svelte-portal/src/Portal.svelte';
+<script >import ToyGroup from './ToyGroup.svelte';
+import 'svelte-portal/src/Portal.svelte';
 export let register;
+export let icon = '🧰';
 export let active = false;
+export let theme = '';
 let data = register.map((store) => {
     return {
         label: Object.keys(store)[0],
@@ -10,19 +12,20 @@ let data = register.map((store) => {
 });
 </script>
 
-<Portal>
-	<div class="state-mang" class:active>
-		<div class="nub" on:click={() => (active = !active)}>🧰</div>
-		<div class="state-man-wrapper">
-			{#each data as { store, label }, index}
-				<StateMangInput isOpen={index === 0} {store} {label} />
-			{/each}
-		</div>
+<div class={`state-mang ${theme}`} class:active>
+	<div class="nub" on:click={() => (active = !active)}>{icon}</div>
+	<div class="state-man-wrapper">
+		{#each data as { store, label }, index}
+			<ToyGroup isOpen={index === 0} {store} {label} />
+		{/each}
 	</div>
-</Portal>
+</div>
 
 <style >.state-mang {
-  transition: transform 0.2s var(--ease-in-out-quint);
+  --toy-color-int: var(--toy-color, black);
+  --toy-background-int: var(--toy-background, white);
+  --toy-nub-bg: var(--toy-background-int);
+  transition: transform 0.2s var(--ease-in-out-quint, cubic-bezier(0.83, 0, 0.17, 1));
   transform: translate3d(100%, 0, 0);
   position: fixed;
   top: 10%;
@@ -43,9 +46,16 @@ let data = register.map((store) => {
   background: var(--toy-nub-bg, #fff);
 }
 
+.dark {
+  --toy-color: white;
+  --toy-background-int: black;
+  --toy-nub-bg: var(--toy-background-int);
+}
+
 .state-man-wrapper {
   box-shadow: var(--level-4, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
-  background: white;
+  background: var(--toy-background-int);
+  color: var(--toy-color-int);
   overflow: hidden;
   max-height: 80vh;
   overflow-y: scroll;

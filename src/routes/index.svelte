@@ -3,15 +3,46 @@
 	import { writable } from 'svelte/store';
 
 	let example = writable({
-		name: 'John',
-		isActive: false
+		name: 'Jonas',
+		isActive: false,
+		test: [
+			{
+				hi: 'hi',
+				hello: 'hello',
+				world: {
+					what: 'is up'
+				}
+			}
+		],
+		some: {
+			thing: 'thing'
+		},
+		justArray: [0, 1, 2, 3]
 	});
+
+	let two = writable('hi');
+	let three = writable({ test: 'hi' });
 </script>
 
-<h1>Hi, my name is {$example.name}</h1>
-
+<h1>This is the Svelte Toy Demo</h1>
+<h2>Hi, my name is {$example.name}</h2>
 {#if $example.isActive}
 	<p>I'm active</p>
 {/if}
 
-<Toy register={[{ example }]} />
+{$example.test[0].world.what}
+
+<div class="state-example">
+	<pre>{JSON.stringify($example, null, 2)}</pre>
+</div>
+
+<Toy --toy-color="red" --toy-bg="blue" register={[{ example }, { two }, { three }]} />
+
+<style>
+	.state-example {
+		border: 1px solid #ccc;
+		padding: 10px;
+		margin: 10px;
+		background: #eee;
+	}
+</style>
