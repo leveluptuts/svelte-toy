@@ -23,7 +23,7 @@
   "name": "@leveluptuts/svelte-toy",
   "repository": "@leveluptuts/svelte-toy",
   "type": "module",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "exports": {
     "./package.json": "./package.json",
     "./Row.svelte": "./Row.svelte",
