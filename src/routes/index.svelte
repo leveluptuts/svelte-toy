@@ -20,8 +20,8 @@
 		justArray: [0, 1, 2, 3]
 	});
 
-	let two = writable('hi');
-	let three = writable({ test: 'hi' });
+	let singleValue = writable('hi');
+	let singleObj = writable({ test: 'hi' });
 </script>
 
 <h1>This is the Svelte Toy Demo</h1>
@@ -35,8 +35,14 @@
 <div class="state-example">
 	<pre>{JSON.stringify($example, null, 2)}</pre>
 </div>
+<div class="state-example">
+	<pre>{JSON.stringify($singleValue, null, 2)}</pre>
+</div>
+<div class="state-example">
+	<pre>{JSON.stringify($singleObj, null, 2)}</pre>
+</div>
 
-<Toy --toy-color="red" --toy-bg="blue" register={[{ example }, { two }, { three }]} />
+<Toy register={[{ example }, { singleValue }, { singleObj }]} />
 
 <style>
 	.state-example {

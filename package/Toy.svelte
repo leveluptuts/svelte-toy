@@ -1,5 +1,4 @@
 <script >import ToyGroup from './ToyGroup.svelte';
-import 'svelte-portal/src/Portal.svelte';
 export let register;
 export let icon = '🧰';
 export let active = false;
@@ -23,7 +22,7 @@ let data = register.map((store) => {
 
 <style >.state-mang {
   --toy-color-int: var(--toy-color, black);
-  --toy-background-int: var(--toy-background, white);
+  --toy-background-int: var(--toy-bg, white);
   --toy-nub-bg: var(--toy-background-int);
   transition: transform 0.2s var(--ease-in-out-quint, cubic-bezier(0.83, 0, 0.17, 1));
   transform: translate3d(100%, 0, 0);

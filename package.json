@@ -15,7 +15,6 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.34.0",
 		"svelte-check": "^2.0.0",
-		"svelte-portal": "^2.1.2",
 		"svelte-preprocess": "^4.0.0",
 		"svelte2tsx": "^0.4.7",
 		"tslib": "^2.0.0",
@@ -34,5 +33,5 @@
 		"preview": "svelte-kit preview"
 	},
 	"type": "module",
-	"version": "0.0.8"
+	"version": "0.0.10"
 }

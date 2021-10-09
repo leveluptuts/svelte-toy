@@ -18,7 +18,7 @@
 				<Row {key} {value} {store} path={key} />
 			{/each}
 		{:else}
-			<Row key={label} value={$store} {store} path={label} />
+			<Row key={label} value={$store} {store} path={label} simple={true} label={false} />
 		{/if}
 	</div>
 {/if}
@@ -55,16 +55,5 @@
 				transform: rotate(0turn);
 			}
 		}
-	}
-
-	label {
-		font-size: 10px;
-	}
-	input {
-		font-size: 14px;
-	}
-
-	textarea {
-		font-size: 12px;
 	}
 </style>

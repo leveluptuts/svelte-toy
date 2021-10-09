@@ -5,6 +5,7 @@ declare const __propDef: {
         value: any;
         store: any;
         path: any;
+        simple?: boolean;
         label?: boolean;
     };
     events: {
