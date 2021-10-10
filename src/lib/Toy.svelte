@@ -28,6 +28,8 @@
 		--toy-color-int: var(--toy-color, hsla(0, 0%, 20%, 1));
 		--toy-background-int: var(--toy-bg, white);
 		--toy-header-bg: hsla(0, 0%, 95%, 1);
+		--toy-highlight: hsla(0, 0%, 98%, 1);
+		--toy-lowlight: hsla(0, 0%, 90%, 1);
 
 		transition: transform 0.2s var(--ease-in-out-quint, cubic-bezier(0.83, 0, 0.17, 1));
 		transform: translate3d(100%, 0, 0);
@@ -42,9 +44,9 @@
 		}
 
 		.nub {
-			border-bottom: solid 1px hsla(0, 0%, 90%, 1);
-			border-right: solid 1px hsla(0, 0%, 90%, 1);
-			border-top: solid 1px hsla(0, 0%, 98%, 1);
+			border-bottom: solid 1px var(--toy-lowlight);
+			border-right: solid 1px var(--toy-lowlight);
+			border-top: solid 1px var(--toy-highlight);
 			border-radius: 5px 0 0 5px;
 			box-shadow: var(
 				--level-4,
@@ -60,13 +62,16 @@
 	}
 
 	.dark {
-		--toy-color: white;
-		--toy-background-int: black;
+		--toy-color: hsla(0, 0%, 80%, 1);
+		--toy-background-int: hsla(0, 00%, 20%, 1);
 		--toy-nub-bg: var(--toy-background-int);
+		--toy-highlight: hsla(0, 0%, 25%, 1);
+		--toy-lowlight: hsla(0, 0%, 5%, 1);
+		--toy-header-bg: hsla(0, 0%, 10%, 1);
 	}
 
 	.state-man-wrapper {
-		border-left: solid 1px hsla(0, 0%, 98%, 1);
+		border-left: solid 1px var(--toy-highlight);
 		box-shadow: var(--level-4, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
 		background: var(--toy-background-int);
 		color: var(--toy-color-int);

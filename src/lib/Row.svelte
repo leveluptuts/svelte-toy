@@ -94,14 +94,17 @@
 	input {
 		display: inline;
 		/* width: auto; */
-		padding: 0;
-		margin: 0;
+		padding: 0 3px;
+		margin: 0 4px;
 		margin-left: 2px;
+		font-size: 12px;
 		font-family: 'MonoLisa', monospace;
 		flex-grow: 0;
 		border: 0;
 		border-radius: 1px;
 		outline-offset: 1px;
+		background: var(--toy-background-int);
+		color: var(--toy-color-int);
 		border-bottom: 1px solid hsla(0, 0%, 80%, 1);
 	}
 	[type='number'] {

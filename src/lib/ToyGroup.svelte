@@ -33,8 +33,8 @@
 	}
 
 	h4 {
-		border-bottom: solid 1px hsla(0, 0%, 90%, 1);
-		border-top: solid 1px hsla(0, 0%, 98%, 1);
+		border-bottom: solid 1px var(--toy-lowlight);
+		border-top: solid 1px var(--toy-highlight);
 		box-shadow: var(--level-2, 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.13));
 		font-family: 'MonoLisa', monospace;
 		text-transform: capitalize;
