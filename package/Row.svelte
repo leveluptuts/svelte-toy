@@ -86,12 +86,27 @@ function updateStore(value) {
 	.container {
 		display: flex;
 		align-items: baseline;
+		justify-content: start;
+		margin-bottom: 2px;
 	}
 
 	input {
 		display: inline;
-		width: auto;
+		/* width: auto; */
+		padding: 0;
+		margin: 0;
+		margin-left: 2px;
+		font-family: 'MonoLisa', monospace;
+		flex-grow: 0;
+		border: 0;
+		border-radius: 1px;
+		outline-offset: 1px;
+		border-bottom: 1px solid hsla(0, 0%, 80%, 1);
 	}
+	[type='number'] {
+		width: 80px;
+	}
+
 	.nested {
 		margin-left: 15px;
 	}

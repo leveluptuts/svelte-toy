@@ -33,15 +33,17 @@
 	}
 
 	h4 {
-		box-shadow: var(--level-2, 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
+		border-bottom: solid 1px hsla(0, 0%, 90%, 1);
+		border-top: solid 1px hsla(0, 0%, 98%, 1);
+		box-shadow: var(--level-2, 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.13));
 		font-family: 'MonoLisa', monospace;
 		text-transform: capitalize;
-		padding: 6px 10px;
+		padding: 4px 6px;
 		cursor: pointer;
-		font-size: var(--toy-heading-font-size, 16px);
+		font-size: var(--toy-heading-font-size, 12px);
 		margin: 0;
-		background: var(--toy-header-background, #000);
-		color: var(--toy-header-color, #fff);
+		background: var(--toy-header-bg);
+		color: var(--toy-header-color, --toy-color);
 
 		span {
 			display: inline-block;

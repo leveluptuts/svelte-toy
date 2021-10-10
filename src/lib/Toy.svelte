@@ -25,9 +25,10 @@
 
 <style lang="scss">
 	.state-mang {
-		--toy-color-int: var(--toy-color, black);
+		--toy-color-int: var(--toy-color, hsla(0, 0%, 20%, 1));
 		--toy-background-int: var(--toy-bg, white);
-		--toy-nub-bg: var(--toy-background-int);
+		--toy-header-bg: hsla(0, 0%, 95%, 1);
+
 		transition: transform 0.2s var(--ease-in-out-quint, cubic-bezier(0.83, 0, 0.17, 1));
 		transform: translate3d(100%, 0, 0);
 		position: fixed;
@@ -41,13 +42,20 @@
 		}
 
 		.nub {
-			border-radius: 15px 0 0 15px;
-			box-shadow: var(--level-4, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
+			border-bottom: solid 1px hsla(0, 0%, 90%, 1);
+			border-right: solid 1px hsla(0, 0%, 90%, 1);
+			border-top: solid 1px hsla(0, 0%, 98%, 1);
+			border-radius: 5px 0 0 5px;
+			box-shadow: var(
+				--level-4,
+				-6px 14px 28px rgba(0, 0, 0, 0.1),
+				-6px 10px 10px rgba(0, 0, 0, 0.12)
+			);
 			position: absolute;
 			padding: 10px;
 			right: 100%;
-			top: 60px;
-			background: var(--toy-nub-bg, #fff);
+			top: 20px;
+			background: var(--toy-nub-bg, var(--toy-header-bg));
 		}
 	}
 
@@ -58,13 +66,14 @@
 	}
 
 	.state-man-wrapper {
+		border-left: solid 1px hsla(0, 0%, 98%, 1);
 		box-shadow: var(--level-4, 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22));
 		background: var(--toy-background-int);
 		color: var(--toy-color-int);
 		overflow: hidden;
-		max-height: 80vh;
+		max-height: 90vh;
 		overflow-y: scroll;
-		border-radius: 10px 0 0 10px;
+		border-radius: 5px 0 0 5px;
 	}
 
 	:global(.state-mang) {
