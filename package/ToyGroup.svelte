@@ -31,8 +31,8 @@ export let isOpen;
 }
 
 h4 {
-  border-bottom: solid 1px #e6e6e6;
-  border-top: solid 1px #fafafa;
+  border-bottom: solid 1px var(--toy-lowlight);
+  border-top: solid 1px var(--toy-highlight);
   box-shadow: var(--level-2, 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.13));
   font-family: "MonoLisa", monospace;
   text-transform: capitalize;

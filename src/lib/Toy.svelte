@@ -30,6 +30,8 @@
 		--toy-header-bg: hsla(0, 0%, 95%, 1);
 		--toy-highlight: hsla(0, 0%, 98%, 1);
 		--toy-lowlight: hsla(0, 0%, 90%, 1);
+		--toy-value-color: hsla(310, 99%, 44%, 1);
+		--toy-key-color: hsla(208, 99%, 33%, 1);
 
 		transition: transform 0.2s var(--ease-in-out-quint, cubic-bezier(0.83, 0, 0.17, 1));
 		transform: translate3d(100%, 0, 0);
@@ -63,11 +65,13 @@
 
 	.dark {
 		--toy-color: hsla(0, 0%, 80%, 1);
-		--toy-background-int: hsla(0, 00%, 20%, 1);
+		--toy-background-int: hsla(241, 6%, 15%, 1);
 		--toy-nub-bg: var(--toy-background-int);
 		--toy-highlight: hsla(0, 0%, 25%, 1);
 		--toy-lowlight: hsla(0, 0%, 5%, 1);
 		--toy-header-bg: hsla(0, 0%, 10%, 1);
+		--toy-value-color: hsla(310, 99%, 74%, 1);
+		--toy-key-color: hsla(208, 99%, 73%, 1);
 	}
 
 	.state-man-wrapper {

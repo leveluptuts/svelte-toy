@@ -42,7 +42,7 @@
 	<pre>{JSON.stringify($singleObj, null, 2)}</pre>
 </div>
 
-<Toy theme="dark" register={[{ example }, { singleValue }, { singleObj }]} />
+<Toy register={[{ example }, { singleValue }, { singleObj }]} />
 
 <style>
 	.state-example {
