@@ -81,6 +81,8 @@ function updateStore(value) {
 <style>
 	.key {
 		font-size: 0.6rem;
+		color: var(--toy-key-color);
+		opacity: 0.9;
 	}
 
 	.container {
@@ -96,16 +98,31 @@ function updateStore(value) {
 		padding: 0 3px;
 		margin: 0 4px;
 		margin-left: 2px;
-		font-size: 12px;
+		font-size: 0.6rem;
 		font-family: 'MonoLisa', monospace;
 		flex-grow: 0;
+		color: var(--toy-color-int);
+		color: var(--toy-value-color);
 		border: 0;
 		border-radius: 1px;
 		outline-offset: 1px;
 		background: var(--toy-background-int);
-		color: var(--toy-color-int);
-		border-bottom: 1px solid hsla(0, 0%, 80%, 1);
+
+		/* border-bottom: 1px solid hsla(0, 0%, 80%, 1); */
 	}
+
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type='number'] {
+		-moz-appearance: textfield;
+	}
+
 	[type='number'] {
 		width: 80px;
 	}

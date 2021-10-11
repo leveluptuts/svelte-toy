@@ -49,8 +49,8 @@
 			</div>
 		{/if}
 	{:else}
-		<!-- TODO Labels are potentiall not unique. MUST FIX BEFORE V1 -->
-		<label class="container" for={path}>
+		<!-- TODO Labels are potentially not unique. MUST FIX BEFORE V1 -->
+		<label class="st-container" for={path}>
 			{#if label}
 				<span class="key">{key}{':'}</span>
 			{/if}
@@ -86,7 +86,7 @@
 		opacity: 0.9;
 	}
 
-	.container {
+	.st-container {
 		display: flex;
 		align-items: baseline;
 		justify-content: start;
