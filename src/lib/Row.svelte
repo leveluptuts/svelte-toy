@@ -89,7 +89,7 @@
 	.st-container {
 		display: flex;
 		align-items: baseline;
-		justify-content: start;
+		justify-content: flex-start;
 		margin-bottom: 2px;
 	}
 
