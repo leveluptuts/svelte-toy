@@ -6,7 +6,7 @@ declare const __propDef: {
         isOpen: any;
     };
     events: {
-        [evt: string]: any;
+        [evt: string]: CustomEvent<any>;
     };
     slots: {};
 };

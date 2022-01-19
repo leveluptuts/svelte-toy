@@ -1,13 +1,13 @@
 import { SvelteComponentTyped } from "svelte";
 declare const __propDef: {
     props: {
+        top?: string;
         register: any;
-        icon?: string;
-        active?: boolean;
+        nub?: string;
         theme?: string;
     };
     events: {
-        [evt: string]: any;
+        [evt: string]: CustomEvent<any>;
     };
     slots: {};
 };

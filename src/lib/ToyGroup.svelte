@@ -6,21 +6,23 @@
 	export let isOpen;
 </script>
 
-<h4 class:isOpen on:click={() => (isOpen = !isOpen)}>
-	<span>▼</span>
-	{label}
-</h4>
+{#if $store}
+	<h4 class:isOpen on:click={() => (isOpen = !isOpen)}>
+		<span>▼</span>
+		{label}
+	</h4>
 
-{#if isOpen}
-	<div class="state-mang-data" transition:slide>
-		{#if typeof $store === 'object'}
-			{#each Object.entries($store) as [key, value]}
-				<Row {key} {value} {store} path={key} />
-			{/each}
-		{:else}
-			<Row key={label} value={$store} {store} path={label} simple={true} label={false} />
-		{/if}
-	</div>
+	{#if isOpen}
+		<div class="state-mang-data" transition:slide>
+			{#if typeof $store === 'object'}
+				{#each Object.entries($store) as [key, value]}
+					<Row {key} {value} {store} path={key} />
+				{/each}
+			{:else}
+				<Row key={label} value={$store} {store} path={label} simple={true} label={false} />
+			{/if}
+		</div>
+	{/if}
 {/if}
 
 <style lang="scss">

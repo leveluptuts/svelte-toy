@@ -5,6 +5,7 @@
 	},
 	"description": "A dope toy for Svelte stores",
 	"devDependencies": {
+		"@leveluptuts/svelte-side-menu": "workspace:^0.0.4",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.10.0",
 		"@typescript-eslint/parser": "^5.10.0",
@@ -33,5 +34,5 @@
 		"preview": "svelte-kit preview"
 	},
 	"type": "module",
-	"version": "0.0.17"
+	"version": "0.0.18"
 }

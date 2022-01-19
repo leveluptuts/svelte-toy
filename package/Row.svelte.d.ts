@@ -9,7 +9,7 @@ declare const __propDef: {
         label?: boolean;
     };
     events: {
-        [evt: string]: any;
+        [evt: string]: CustomEvent<any>;
     };
     slots: {};
 };
