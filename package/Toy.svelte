@@ -10,7 +10,6 @@ let data = register.map((store) => {
         store: store[Object.keys(store)[0]]
     };
 });
-$: console.log('data', data);
 </script>
 
 <SideMenu {theme} {nub} {top} links={[]}>
