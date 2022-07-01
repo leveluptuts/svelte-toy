@@ -108,8 +108,6 @@
 		border-radius: 1px;
 		outline-offset: 1px;
 		background: var(--toy-background-int);
-
-		/* border-bottom: 1px solid hsla(0, 0%, 80%, 1); */
 	}
 
 	/* Chrome, Safari, Edge, Opera */

@@ -6,6 +6,7 @@
 	"description": "A dope toy for Svelte stores",
 	"devDependencies": {
 		"@leveluptuts/svelte-side-menu": "workspace:^0.0.4",
+		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",

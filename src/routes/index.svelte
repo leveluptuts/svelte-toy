@@ -1,5 +1,5 @@
 <script>
-	import Toy from '$lib/Toy.svelte';
+	import { Toy } from '$lib/index';
 	import { writable } from 'svelte/store';
 
 	let example = writable({
@@ -42,7 +42,7 @@
 	<pre>{JSON.stringify($singleObj, null, 2)}</pre>
 </div>
 
-<Toy register={[{ example }, { singleValue }, { singleObj }]} />
+<Toy register={{ example, singleValue, singleObj }} />
 
 <style>
 	.state-example {
