@@ -7,10 +7,11 @@
 	export let nub = '🧰';
 	export let theme = '';
 
-	let data = register.map((store) => {
+	let keys = Object.keys(register);
+	let data = keys.map((key) => {
 		return {
-			label: Object.keys(store)[0],
-			store: store[Object.keys(store)[0]]
+			label: key,
+			store: register[key]
 		};
 	});
 </script>

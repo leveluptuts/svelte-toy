@@ -1,5 +1,3 @@
-![construction.gif](./static/YVPE.gif)
-
 # Svelte Toy
 
 ## Demo
@@ -10,7 +8,7 @@ https://svelte.dev/repl/4566ac90a5ca42d6ade1c383b6f1ba66?version=3.43.1
 
 ```svelte
 <script>
-	import Toy from '@leveluptuts/svelte-toy';
+	import { Toy } from '@leveluptuts/svelte-toy'
 	import { writable } from 'svelte/store';
 
 	let example = writable({
@@ -25,5 +23,11 @@ https://svelte.dev/repl/4566ac90a5ca42d6ade1c383b6f1ba66?version=3.43.1
 	<p>I'm active</p>
 {/if}
 
-<Toy register={[{ example }]} />
+<Toy register={{ example }} />
 ```
+
+### Changelog
+
+1.0.0 -> 2.0.0
+
+`<Toy register={[{ example }]} />` is now `<Toy register={{ example }} />` which honestly makes way more sense.

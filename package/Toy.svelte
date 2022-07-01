@@ -1,13 +1,14 @@
-<script >import ToyGroup from './ToyGroup.svelte';
+<script>import ToyGroup from './ToyGroup.svelte';
 import SideMenu from '@leveluptuts/svelte-side-menu/SideMenu.svelte';
 export let top = '10%';
 export let register;
 export let nub = '🧰';
 export let theme = '';
-let data = register.map((store) => {
+let keys = Object.keys(register);
+let data = keys.map((key) => {
     return {
-        label: Object.keys(store)[0],
-        store: store[Object.keys(store)[0]]
+        label: key,
+        store: register[key]
     };
 });
 </script>
@@ -20,7 +21,7 @@ let data = register.map((store) => {
 	</div>
 </SideMenu>
 
-<style >.state-mang {
+<style>.state-mang {
   --toy-value-color: hsla(310, 99%, 44%, 1);
   --toy-key-color: hsla(208, 99%, 33%, 1);
 }

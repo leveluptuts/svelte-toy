@@ -21,16 +21,16 @@
     "tslib": "^2.0.0",
     "typescript": "^4.7.2"
   },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.js",
+    "./Row.svelte": "./Row.svelte",
+    "./Toy.svelte": "./Toy.svelte",
+    "./ToyGroup.svelte": "./ToyGroup.svelte"
+  },
   "name": "@leveluptuts/svelte-toy",
   "repository": "@leveluptuts/svelte-toy",
   "type": "module",
-  "version": "0.0.18",
-  "exports": {
-    "./package.json": "./package.json",
-    "./Row.svelte": "./Row.svelte",
-    "./Toy.svelte": "./Toy.svelte",
-    "./ToyGroup.svelte": "./ToyGroup.svelte",
-    ".": "./index.js"
-  },
+  "version": "2.0.0",
   "svelte": "./index.js"
 }

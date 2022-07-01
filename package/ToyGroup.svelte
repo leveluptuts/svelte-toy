@@ -1,4 +1,4 @@
-<script >import { slide } from 'svelte/transition';
+<script>import { slide } from 'svelte/transition';
 import Row from './Row.svelte';
 export let store;
 export let label;
@@ -24,7 +24,7 @@ export let isOpen;
 	{/if}
 {/if}
 
-<style >div {
+<style>div {
   margin-bottom: 5px;
 }
 

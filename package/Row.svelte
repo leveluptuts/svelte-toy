@@ -1,4 +1,4 @@
-<script >import set from 'lodash.set';
+<script>import set from 'lodash.set';
 export let key;
 export let value;
 export let store;
