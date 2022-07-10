@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://svelte.dev/repl/4566ac90a5ca42d6ade1c383b6f1ba66
+https://svelte.dev/repl/4566ac90a5ca42d6ade1c383b6f1ba66?version=3.43.1
 
 `npm install @leveluptuts/svelte-toy`
 
@@ -23,11 +23,5 @@ https://svelte.dev/repl/4566ac90a5ca42d6ade1c383b6f1ba66
 	<p>I'm active</p>
 {/if}
 
-<Toy register={{ example }} />
+<Toy register={[{ example }]} />
 ```
-
-### Changelog
-
-1.0.0 -> 2.0.0
-
-`<Toy register={[{ example }]} />` is now `<Toy register={{ example }} />` which honestly makes way more sense.

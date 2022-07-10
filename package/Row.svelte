@@ -88,7 +88,7 @@ function updateStore(value) {
 	.st-container {
 		display: flex;
 		align-items: baseline;
-		justify-content: start;
+		justify-content: flex-start;
 		margin-bottom: 2px;
 	}
 
@@ -107,8 +107,6 @@ function updateStore(value) {
 		border-radius: 1px;
 		outline-offset: 1px;
 		background: var(--toy-background-int);
-
-		/* border-bottom: 1px solid hsla(0, 0%, 80%, 1); */
 	}
 
 	/* Chrome, Safari, Edge, Opera */
