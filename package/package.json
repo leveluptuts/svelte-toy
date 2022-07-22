@@ -33,6 +33,6 @@
   "name": "@leveluptuts/svelte-toy",
   "repository": "@leveluptuts/svelte-toy",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "svelte": "./index.js"
 }

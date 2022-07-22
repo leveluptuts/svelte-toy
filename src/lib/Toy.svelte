@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ToyGroup from './ToyGroup.svelte';
-	import SideMenu from '@leveluptuts/svelte-side-menu/SideMenu.svelte';
+	import { SideMenu } from '@leveluptuts/svelte-side-menu';
 
 	export let top = '10%';
 	export let register;
