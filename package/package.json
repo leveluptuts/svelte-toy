@@ -1,5 +1,5 @@
 {
-  "author": "leveluptuts",
+  "author": "Scott Tolinski | Level Up Tutorials",
   "dependencies": {
     "lodash.set": "^4.3.2"
   },
@@ -7,7 +7,7 @@
   "devDependencies": {
     "@leveluptuts/svelte-side-menu": "1.0.2",
     "@sveltejs/adapter-static": "1.0.0-next.38",
-    "@sveltejs/kit": "1.0.0-next.390",
+    "@sveltejs/kit": "1.0.0-next.392",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
     "eslint": "^8.20.0",
