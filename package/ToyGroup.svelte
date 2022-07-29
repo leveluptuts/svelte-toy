@@ -49,7 +49,7 @@ h4 span {
   display: inline-block;
   font-size: 10px;
   transform: rotate(-90deg);
-  transition: 0.2s transform var(--ease-in-out-quint);
+  transition: 0.2s transform var(--ease_in_out_quint);
 }
 h4.isOpen span {
   transform: rotate(0turn);
