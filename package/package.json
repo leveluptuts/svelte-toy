@@ -7,10 +7,10 @@
   "devDependencies": {
     "@leveluptuts/svelte-side-menu": "1.0.5",
     "@sveltejs/adapter-static": "1.0.0-next.38",
-    "@sveltejs/kit": "1.0.0-next.401",
+    "@sveltejs/kit": "1.0.0-next.403",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
+    "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "prettier": "~2.7.1",
