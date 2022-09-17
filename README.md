@@ -23,5 +23,5 @@ https://svelte.dev/repl/4566ac90a5ca42d6ade1c383b6f1ba66?version=3.43.1
 	<p>I'm active</p>
 {/if}
 
-<Toy register={[{ example }]} />
+<Toy register={{ example }} />
 ```
