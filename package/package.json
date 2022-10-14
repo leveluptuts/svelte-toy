@@ -7,7 +7,7 @@
   "devDependencies": {
     "@leveluptuts/svelte-side-menu": "1.0.5",
     "@sveltejs/adapter-static": "1.0.0-next.44",
-    "@sveltejs/kit": "1.0.0-next.512",
+    "@sveltejs/kit": "1.0.0-next.516",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.25.0",
@@ -21,7 +21,7 @@
     "svelte2tsx": "^0.5.20",
     "tslib": "^2.0.0",
     "typescript": "^4.8.4",
-    "vite": "3.1.7"
+    "vite": "3.1.8"
   },
   "name": "@leveluptuts/svelte-toy",
   "repository": "@leveluptuts/svelte-toy",
